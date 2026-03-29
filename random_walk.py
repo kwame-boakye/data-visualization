@@ -14,10 +14,10 @@ class RandomWalk:
 
     def fill_walk(self):
 
-        #keep walking until the walk reaches the desired length.
+        # Keep walking until the walk reaches the desired length.
         while len(self.x_values) < self.num_points:
 
-            # decide which direction to go and how far to go in that direction.
+            # Decide which direction to go and how far to go in that direction.
             x_direction = choice([1, -1])
             x_distance = choice([0, 1, 2, 3, 4])
             x_step = x_direction * x_distance
@@ -29,7 +29,7 @@ class RandomWalk:
             if x_step == 0 and y_step == 0:
                 continue
 
-            # calculate the new position.
+            # Calculate the new position.
             x = self.x_values[-1] + x_step
             y = self.y_values[-1] + y_step
 
