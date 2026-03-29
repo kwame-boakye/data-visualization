@@ -2,7 +2,7 @@
 A random walk is a path that has no clear direction but determined by a series
 of random decisions.
 """
-
+from random import choice
 class RandomWalk:
     """A class to generate random walks."""
 
